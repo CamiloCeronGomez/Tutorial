@@ -3,12 +3,14 @@ using System.Collections;
 
 public class Move : MonoBehaviour {
 
-	float deltaRotation = 30f;
-	float deltaMovement = 10f;
+	public float deltaRotation = 30f;
+	public float deltaMovement = 10f;
+
+	public Color color;
 	// Use this for initialization
 	void Start () 
 	{
-	
+		GetComponent<Renderer>().material.color = color;
 	}
 	
 	// Update is called once per frame
